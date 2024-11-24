@@ -1,2 +1,9 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Normalize line endings for all text files to LF
+*.txt text eol=lf
+
+# Force CRLF line endings for .bat files (Windows)
+*.bat text eol=crlf
+
+git config --global core.autocrlf true
